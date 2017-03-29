@@ -15,8 +15,6 @@ class ViewController: ASViewController<ASDisplayNode> {
         super.init(node: ASTableNode(style: .grouped))
         tableNode.delegate = self
         tableNode.dataSource = self
-        tableNode.view.sectionHeaderHeight = 0.000001
-        tableNode.view.sectionFooterHeight = 0.000001
         tableNode.view.separatorStyle = .none
 
         createDummyData()
